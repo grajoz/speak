@@ -8,7 +8,118 @@
     <link href="style.css" rel="stylesheet">
 </head>
     <body id="body">    
+        <div id="intro" class="intro">
+            <h1 class="intro__captoin">SpeakIt</h1>
+            <p class="intro__text">Click on the words to hear them sound.<br>
+                Click on the button and speak the words into the microphone.
+            </p>
+            <button id="intro__button" class="intro__button">Start</button>
+        </div>
+        <div class="page">
+            <div class="infomation-level-score">
+                <ul class="level">
+                    <li class="level__li level__li_active">1</li>
+                    <li class="level__li">2</li>
+                    <li class="level__li">3</li>
+                    <li class="level__li">4</li>
+                    <li class="level__li">5</li>
+                    <li class="level__li">6</li>
+                </ul>
+                <div class="score"></div>
+            </div>
+            <img id="img" src="img/english.jpg" alt="" class="img">
+            <p id="translation" class="translation"></p>
+            <input type="text" class="input none">
+            <div id="cards" class="cards">
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word"></p>
+                    <p class="transcription"></p>
+                </div>
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word"></p>
+                    <p class="transcription"></p>
+                </div>
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word"></p>
+                    <p class="transcription"></p>
+                </div>
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word">scholarship</p>
+                    <p class="transcription">[skɑ́ləːrʃìp]</p>
+                </div>
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word"></p>
+                    <p class="transcription"></p>
+                </div>
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word"></p>
+                    <p class="transcription"></p>
+                </div>
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word"></p>
+                    <p class="transcription"></p>
+                </div>
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word"></p>
+                    <p class="transcription"></p>
+                </div>
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word"></p>
+                    <p class="transcription"></p>
+                </div>
+                <div class="card">
+                    <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                    <p class="word"></p>
+                    <p class="transcription"></p>
+                </div>
+            </div>
+            <div class="control">
+                <button class="control__button">Restart</button>
+                <button class="control__button">Speak please</button>
+                <button class="control__button">Result</button>
+                <button class="control__button">Statistics</button>
+            </div>
+        </div>
+
+        <div class="result none">
+            <div class="result__wrapper">
+                <p class="error">"Ошибок " <span class="error__num">10</span> </p>
+                <div class="words">
+                    <div class="card__result">
+                        <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                        <p class="word">scholarship</p>
+                        <p class="transcription">[skɑ́ləːrʃìp]</p>
+                        <p class="translation">стипендии</p>
+                    </div>
+                </div>
+                <p class="succes">"Знаю " <span class="succes__num">0</span> </p>
+                <div class="words">
+                    <div class="card__result">
+                        <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
+                        <p class="word">scholarship</p>
+                        <p class="transcription">[skɑ́ləːrʃìp]</p>
+                        <p class="translation">стипендии</p>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="control__button">Return</button>
+                    <button class="control__button">New game</button>
+                </div>
+            </div>
+        </div>
+        <div class="statistics">
+            
+        </div>    
         <img src="img/speakit.png" alt="speakit" class="may-page">
-        <script src="src/index.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
