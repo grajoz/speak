@@ -33,6 +33,7 @@ speechRecogn.lang = 'en';
 NG.addEventListener('click', ()=>{
     ERROR.innerHTML='';
     SUCCES.innerHTML='';
+    translation.innerHTML='';
     letWordsToCards(0);
     deleteStars();
     let idIntro=document.getElementById('page1');
@@ -222,7 +223,14 @@ for (let i=0;i<6;i++){
 START.addEventListener('click', (event)=>{
     deleteStars();
     letWordsToCards(0);
-
+    for (let j=0;j<10;j++){
+        card[j].classList.remove('cardActive');
+        card[j].classList.remove('active');
+    };
+    for (let j=0;j<6;j++){
+        LEVEL__LI[j].classList.remove('level__li_active');
+    };
+    translation.innerHTML='';
     ERROR.innerHTML='';
     SUCCES.innerHTML='';
     speechRecogn.stop();
