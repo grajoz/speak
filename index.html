@@ -15,9 +15,9 @@
             </p>
             <button id="intro__button" class="intro__button">Start</button>
         </div>
-        <div class="page">
+        <div id="page1" class="page">
             <div class="infomation-level-score">
-                <ul class="level">
+                <ul id="level" class="level">
                     <li class="level__li level__li_active">1</li>
                     <li class="level__li">2</li>
                     <li class="level__li">3</li>
@@ -25,7 +25,7 @@
                     <li class="level__li">5</li>
                     <li class="level__li">6</li>
                 </ul>
-                <div class="score"></div>
+                <div id="score" class="score"></div>
             </div>
             <img id="img" src="img/english.jpg" alt="" class="img">
             <p id="translation" class="translation"></p>
@@ -83,43 +83,31 @@
                 </div>
             </div>
             <div class="control">
-                <button class="control__button">Restart</button>
-                <button class="control__button">Speak please</button>
-                <button class="control__button">Result</button>
-                <button class="control__button">Statistics</button>
+                <button id="start" class="control__button">Restart</button>
+                <button id="speak" class="control__button">Speak game</button>
+                <button id="result2" class="control__button">Result</button>
+                <!-------<button id="staristics" class="control__button">Statistics</button>-->
             </div>
         </div>
 
-        <div class="result none">
+        <div id="re" class="result none">
             <div class="result__wrapper">
-                <p class="error">"Ошибок " <span class="error__num">10</span> </p>
-                <div class="words">
-                    <div class="card__result">
-                        <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
-                        <p class="word">scholarship</p>
-                        <p class="transcription">[skɑ́ləːrʃìp]</p>
-                        <p class="translation">стипендии</p>
-                    </div>
+                <p class="error">Ошибок <span id="error__num" class="error__num">10</span> </p>
+                <div id="error" class="words">
                 </div>
-                <p class="succes">"Знаю " <span class="succes__num">0</span> </p>
-                <div class="words">
-                    <div class="card__result">
-                        <span class="audio-icon"><img src="img/dinamic.png" alt="audio__icon" class="audio__icon"></span>
-                        <p class="word">scholarship</p>
-                        <p class="transcription">[skɑ́ləːrʃìp]</p>
-                        <p class="translation">стипендии</p>
-                    </div>
+                <p class="succes">Знаю <span id="succes__num"  class="succes__num">0</span> </p>
+                <div id="succes" class="words">
                 </div>
                 <div class="control">
-                    <button class="control__button">Return</button>
-                    <button class="control__button">New game</button>
+                    <button id="ytr" class="control__button">Return</button>
+                    <button id="ng" class="control__button">New game</button>
                 </div>
             </div>
         </div>
         <div class="statistics">
             
         </div>    
-        <img src="img/speakit.png" alt="speakit" class="may-page">
+       
         <script src="index.js"></script>
     </body>
 </html>

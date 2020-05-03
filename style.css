@@ -106,7 +106,7 @@ body {
     background-color: #04024d;
     color: #c4c100;
     margin-right: 10px;
-    box-shadow: 0 0 0 2px #ffffff;
+    box-shadow: 0 0 0 2px #c4c100;
     cursor: pointer;
     transition: .5s;
 }
@@ -118,7 +118,7 @@ body {
 .level__li_active {
     border-radius: 20%;
     font-size: 20px;
-    box-shadow: 0 0 0 5px #415b7c;
+    box-shadow: 0 0 0 5px #c4c100;
 }
 
 .level__li_active:hover {
@@ -200,6 +200,10 @@ body {
 box-shadow: 0 2px 15px 0 rgba(0,0,0,.5), 0 2px 25px 0 rgba(0,0,0,.5);
 }
 
+.cardActive {
+    background-color: rgb(247, 199, 210);
+}
+
 .control {
     display: flex;
 }
@@ -227,7 +231,7 @@ box-shadow: 0 2px 15px 0 rgba(0,0,0,.5), 0 2px 25px 0 rgba(0,0,0,.5);
 
 .audio-icon {
     position: absolute;
-    top: 18px;
+    top: 13px;
     left: 10px;
     width: 34px;
     height: 34px;
@@ -252,11 +256,12 @@ box-shadow: 0 2px 15px 0 rgba(0,0,0,.5), 0 2px 25px 0 rgba(0,0,0,.5);
 }
 
 .result {
+    position: relative;
     margin: auto;
     width: 100%;
-    max-width: 780px;
-    min-height: 600px;
-    padding: 40px 100px;
+   
+  top: 0px;
+  left: 0px;
     text-align: left;
     background-color: #fff;
     border-radius: 8px;
@@ -292,8 +297,8 @@ box-shadow: 0 2px 15px 0 rgba(0,0,0,.5), 0 2px 25px 0 rgba(0,0,0,.5);
     padding-left: 40px;
     font-size: 24px;
     line-height: 1.4;
-    min-width: 200px;
-    min-height: 70px;
+    min-width: 300px;
+   /* min-height: 70px;*/
     margin: 10px;
     border: 1px solid rgb(206, 212, 218);
     border-radius: 5px;
