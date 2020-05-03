@@ -31,6 +31,9 @@ speechRecogn.interimResults = true;
 speechRecogn.lang = 'en';
 
 NG.addEventListener('click', ()=>{
+    stars=0;
+    ERROR__NUM.textContent=10-stars;
+    SUCCES__NUM.textContent=stars;
     ERROR.innerHTML='';
     SUCCES.innerHTML='';
     translation.innerHTML='';
@@ -223,6 +226,9 @@ for (let i=0;i<6;i++){
 START.addEventListener('click', (event)=>{
     deleteStars();
     letWordsToCards(0);
+    stars=0;
+    ERROR__NUM.textContent=10-stars;
+                    SUCCES__NUM.textContent=stars;
     for (let j=0;j<10;j++){
         card[j].classList.remove('cardActive');
         card[j].classList.remove('active');
